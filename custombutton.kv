@@ -1,0 +1,604 @@
+#:import Factory kivy.factory.Factory
+<ChangeKey@Popup>
+
+    auto_dismiss: True
+    size_hint: 0.6, 0.6
+    pos_hint: {"x": 0.2, "top": 0.8}
+
+    canvas:
+        Color:
+            rgb: (255/255, 170/255, 235/255)
+        Line:
+            width: 47
+            rectangle: self.x, self.y, self.width, self.height
+
+    FloatLayout:
+        canvas:
+            Color:
+                rgb: (255/255, 170/255, 235/255)
+            Rectangle:
+                pos: self.pos
+                size: self.size
+            Line:
+                width: 2
+                rectangle: self.x, self.y, self.width, self.height
+
+        Label:
+            pos_hint: {"x": -0.0, "top": 1.45}
+            background_color: 1, 0, 0, 1
+            text: ""
+            font_size: 25
+            bold: True
+            color: 200/255, 0/255, 70/255, 1
+
+        Label:
+            pos_hint: {"x": -0.0, "top": 1.1}
+            background_color: 1, 0, 0, 1
+            text: "Press the key you want to"
+            font_size: 30
+            bold: True
+            color: 200/255, 0/255, 70/255, 1
+
+        Label:
+            pos_hint: {"x": -0.0, "top": 0.95}
+            background_color: 1, 0, 0, 1
+            text: "select and then close"
+            font_size: 30
+            bold: True
+            color: 200/255, 0/255, 70/255, 1
+
+        Label:
+            pos_hint: {"x": -0.0, "top": 0.8}
+            background_color: 1, 0, 0, 1
+            text: ""
+            font_size: 25
+            bold: True
+            color: 200/255, 0/255, 70/255, 1
+
+        Label:
+            pos_hint: {"x": -0.0, "top": 1.05}
+            background_color: 1, 0, 0, 1
+            text: ""
+            font_size: 25
+            bold: True
+            color: 200/255, 0/255, 70/255, 1
+
+        Label:
+            pos_hint: {"x": -0.0, "top": .95}
+            background_color: 1, 0, 0, 1
+            text: ""
+            font_size: 25
+            bold: True
+            color: 200/255, 0/255, 70/255, 1
+
+        Label:
+            pos_hint: {"x": -0.0, "top": .85}
+            background_color: 1, 0, 0, 1
+            text: ""
+            font_size: 25
+            bold: True
+            color: 200/255, 0/255, 70/255, 1
+
+        Label:
+            pos_hint: {"x": -0.0, "top": .75}
+            background_color: 1, 0, 0, 1
+            text: ""
+            font_size: 25
+            bold: True
+            color: 200/255, 0/255, 70/255, 1
+        Label:
+            pos_hint: {"x": -0.0, "top": .65}
+            background_color: 1, 0, 0, 1
+            text: ""
+            font_size: 25
+            bold: True
+            color: 200/255, 0/255, 70/255, 1
+
+        Button:
+            pos_hint: {"x": 0.9, "top": 0.1}
+            size_hint: 0.1, 0.1
+            text: "x"
+            font_size: 30
+            on_release: root.dismiss()
+
+<Setting@Popup>
+
+    auto_dismiss: True
+    size_hint: 0.6, 0.6
+    pos_hint: {"x": 0.2, "top": 0.8}
+
+    canvas:
+        Color:
+            rgb: (255/255, 170/255, 235/255)
+        Line:
+            width: 47
+            rectangle: self.x, self.y, self.width, self.height
+
+    FloatLayout:
+        canvas:
+            Color:
+                rgb: (255/255, 170/255, 235/255)
+            Rectangle:
+                pos: self.pos
+                size: self.size
+            Line:
+                width: 2
+                rectangle: self.x, self.y, self.width, self.height
+
+        Label:
+            pos_hint: {"x": -0.0, "top": 1.25}
+            background_color: 1, 0, 0, 1
+            text: "Change trigger key"
+            font_size: 40
+            bold: True
+            color: 200/255, 0/255, 70/255, 1
+
+        Label:
+            pos_hint: {"x": -0.0, "top": 1.35}
+            background_color: 1, 0, 0, 1
+            text: ""
+            font_size: 25
+            bold: True
+            color: 200/255, 0/255, 70/255, 1
+
+        Label:
+            pos_hint: {"x": -0.0, "top": 1.25}
+            background_color: 1, 0, 0, 1
+            text: ""
+            font_size: 25
+            bold: True
+            color: 200/255, 0/255, 70/255, 1
+
+        Label:
+            pos_hint: {"x": -0.0, "top": 1.15}
+            background_color: 1, 0, 0, 1
+            text: ""
+            font_size: 25
+            bold: True
+            color: 200/255, 0/255, 70/255, 1
+
+        Label:
+            pos_hint: {"x": -0.0, "top": 1.05}
+            background_color: 1, 0, 0, 1
+            text: ""
+            font_size: 25
+            bold: True
+            color: 200/255, 0/255, 70/255, 1
+
+        Label:
+            pos_hint: {"x": -0.0, "top": .95}
+            background_color: 1, 0, 0, 1
+            text: ""
+            font_size: 25
+            bold: True
+            color: 200/255, 0/255, 70/255, 1
+
+        Label:
+            pos_hint: {"x": -0.0, "top": .85}
+            background_color: 1, 0, 0, 1
+            text: ""
+            font_size: 25
+            bold: True
+            color: 200/255, 0/255, 70/255, 1
+
+        Label:
+            pos_hint: {"x": -0.0, "top": .75}
+            background_color: 1, 0, 0, 1
+            text: ""
+            font_size: 25
+            bold: True
+            color: 200/255, 0/255, 70/255, 1
+
+        Label:
+            pos_hint: {"x": -0.0, "top": .65}
+            background_color: 1, 0, 0, 1
+            text: ""
+            font_size: 25
+            bold: True
+            color: 200/255, 0/255, 70/255, 1
+
+        Button:
+            pos_hint: {"x": 0.9, "top": 0.1}
+            size_hint: 0.1, 0.1
+            text: "x"
+            font_size: 30
+            on_release: root.dismiss()
+
+        Button:
+            size_hint: (.5, .3)
+            pos_hint: {"x":.25, "y":.3}
+            background_normal: ''
+            background_color: 1, .5, .6, .85
+            font_size: 50
+            bold: True
+            color: 200/255, 0/255, 70/255, 1
+            text: "Change"
+            on_release: root.dismiss()
+            on_release: Factory.ChangeKey().open()
+            on_release: app.root.changeKey()
+
+<Question@Popup>
+
+    auto_dismiss: True
+    size_hint: 0.6, 0.6
+    pos_hint: {"x": 0.2, "top": 0.8}
+
+    canvas:
+        Color:
+            rgb: (255/255, 170/255, 235/255)
+        Line:
+            width: 47
+            rectangle: self.x, self.y, self.width, self.height
+
+    FloatLayout:
+        canvas:
+            Color:
+                rgb: (255/255, 170/255, 235/255)
+            Rectangle:
+                pos: self.pos
+                size: self.size
+            Line:
+                width: 2
+                rectangle: self.x, self.y, self.width, self.height
+
+        Label:
+            pos_hint: {"x": -0.0, "top": 1.25}
+            background_color: 1, 0, 0, 1
+            text: "Instructions:"
+            font_size: 35
+            bold: True
+            color: 200/255, 0/255, 70/255, 1
+
+        Label:
+            pos_hint: {"x": -0.0, "top": 1.0}
+            background_color: 1, 0, 0, 1
+            text: "Press the trigger key (`) "
+            font_size: 20
+            bold: True
+            color: 200/255, 0/255, 70/255, 1
+
+        Label:
+            pos_hint: {"x": -0.0, "top": 0.90}
+            background_color: 1, 0, 0, 1
+            text: "(you can always change this)"
+            font_size: 20
+            bold: True
+            color: 200/255, 0/255, 70/255, 1
+
+        Label:
+            pos_hint: {"x": -0.0, "top": 0.80}
+            background_color: 1, 0, 0, 1
+            text: "and drag over the text"
+            font_size: 20
+            bold: True
+            color: 200/255, 0/255, 70/255, 1
+
+        Label:
+            pos_hint: {"x": -0.0, "top": 1.05}
+            background_color: 1, 0, 0, 1
+            text: ""
+            font_size: 25
+            bold: True
+            color: 200/255, 0/255, 70/255, 1
+
+        Label:
+            pos_hint: {"x": -0.0, "top": .95}
+            background_color: 1, 0, 0, 1
+            text: ""
+            font_size: 25
+            bold: True
+            color: 200/255, 0/255, 70/255, 1
+
+        Label:
+            pos_hint: {"x": -0.0, "top": .85}
+            background_color: 1, 0, 0, 1
+            text: ""
+            font_size: 25
+            bold: True
+            color: 200/255, 0/255, 70/255, 1
+
+        Label:
+            pos_hint: {"x": -0.0, "top": .75}
+            background_color: 1, 0, 0, 1
+            text: ""
+            font_size: 25
+            bold: True
+            color: 200/255, 0/255, 70/255, 1
+
+<Credits@Popup>
+
+    auto_dismiss: True
+    size_hint: 0.6, 0.6
+    pos_hint: {"x": 0.2, "top": 0.8}
+
+    canvas:
+        Color:
+            rgb: (255/255, 170/255, 235/255)
+        Line:
+            width: 47
+            rectangle: self.x, self.y, self.width, self.height
+
+    BoxLayout:
+        orientation: "vertical"
+        size: root.width, root.height
+
+        canvas:
+            Color:
+                rgb: (255/255, 170/255, 235/255)
+            Rectangle:
+                pos: self.pos
+                size: self.size
+            Line:
+                width: 2
+                rectangle: self.x, self.y, self.width, self.height
+
+        Label:
+            background_color: 1, 0, 0, 1
+            text: "Made by:"
+            font_size: 50
+            bold: True
+            color: 200/255, 0/255, 70/255, 1
+
+        Label:
+            background_color: 1, 0, 0, 1
+            text: "Darren Ma - Program"
+            font_size: 35
+            bold: True
+            color: 200/255, 0/255, 70/255, 1
+
+        Label:
+            background_color: 1, 0, 0, 1
+            text: "Alex Zhou - GUI"
+            font_size: 35
+            bold: True
+            color: 200/255, 0/255, 70/255, 1
+
+        Button:
+            pos_hint: {"x": 0.9, "top": 0.1}
+            size_hint: 0.1, 0.1
+            text: "x"
+            font_size: 30
+            on_release: root.dismiss()
+
+<FloatLayout>:
+
+    canvas:
+        Color:
+            rgb: (255/255, 170/255, 235/255)
+        Rectangle:
+            pos: self.pos
+            size: self.size
+        Line:
+            width: 2
+            rectangle: self.x, self.y, self.width, self.height
+
+    Button:
+        size_hint: (.277, .205)
+        pos_hint: {"x":.0655, "y":.048}
+        background_normal: ''
+        background_color: 200/255, 0, 70/255
+
+    Button:
+        size_hint: (.274, .2)
+        pos_hint: {"x":.067, "y":.049}
+        background_normal: ''
+        background_color: 1, .5, .6, .85
+        font_size: 50
+        bold: True
+        color: 200/255, 0/255, 70/255, 1
+        text: "Update"
+        on_release: root.update()
+
+    Button:
+        size_hint: (.278, .205)
+        pos_hint: {"x":.3645, "y":.0475}
+        background_normal: ''
+        background_color: 200/255, 0, 70/255
+
+    Button:
+        size_hint: (.275, .2)
+        pos_hint: {"x":.366, "y":.049}
+        background_normal: ''
+        background_color: 1, .5, .6, .85
+        font_size: 50
+        bold: True
+        color: 200/255, 0/255, 70/255, 1
+        text: "Copy"
+        on_release: root.copy()
+
+    Button:
+        size_hint: (.278, .205)
+        pos_hint: {"x":.664, "y":.0475}
+        background_normal: ''
+        background_color: 200/255, 0, 70/255
+
+    Button:
+        size_hint: (.274, .2)
+        pos_hint: {"x":.666, "y":.049}
+        background_normal: ''
+        background_color: 1, .5, .6, .85
+        font_size: 50
+        bold: True
+        color: 200/255, 0/255, 70/255, 1
+        text: "Settings"
+        on_release: Factory.Setting().open()
+
+    Button:
+        size_hint: (.278, .2)
+        pos_hint: {"x":0, "y":0.8}
+        background_normal: ''
+        background_color: 255/255, 6/255, 0/255, 1
+        font_size: 80
+        bold: True
+        color: 200/255, 0/255, 70/255, 1
+        text: "STS"
+        disabled: True
+        #background_disabled_normal: self.background_normal
+        # ^ Unmesses up the colors but not using that rn cause i like the colors
+
+    Button: #Control panel button
+        size_hint: (.8, .2)
+        pos_hint: {"x":.275, "y":0.8}
+        background_normal: ''
+        background_color: 1, .3, .4, 1
+        font_size: 50
+        bold: True
+        color: 200/255, 0/255, 70/255, 1
+        disabled: True
+        #background_disabled_normal: self.background_normal
+        # ^ Unmesses up the colors but not using that rn cause i like the colors
+
+    Label:
+        background_color: 1, 0, 0, 1
+        size_hint: (.275, .2)
+        pos_hint: {"x": 0.4, "y": .8}
+        text: "Control Panel"
+        font_size: 60
+        bold: True
+        color: 200/255, 0/255, 70/255, 1
+        disabled: True
+
+    Slider:
+        value_track: True
+        value_track_color: 1, .3, .4, .85
+        size_hint: (.65, .2)
+        pos_hint: {"x": .205, "y": .43}
+        id: slider
+        value: 50
+        min: 0
+        max: 100
+        step: 1
+        orientation: 'horizontal'
+
+    Label:
+        background_color: 1, 0, 0, 1
+        size_hint: (.275, .2)
+        pos_hint: {"x": .79, "y": .435}
+        id: speed_label
+        text: str(int(slider.value))
+        font_size: 50
+        bold: True
+        color: 200/255, 0/255, 70/255, 1
+
+    Slider:
+        value_track: True
+        value_track_color: 1, .3, .4, .85
+        size_hint: (.65, .2)
+        pos_hint: {"x": .205, "y": .63}
+        id: slider2
+        value: 50
+        min: 0
+        max: 100
+        step: 1
+        orientation: 'horizontal'
+        #on_value: root.slide_it(*args)
+
+    Label:
+        background_color: 1, 0, 0, 1
+        size_hint: (.275, .2)
+        pos_hint: {"x": .79, "y": .635}
+        id: volume_label
+        text: str(int(slider2.value))
+        font_size: 50
+        bold: True
+        color: 200/255, 0/255, 70/255, 1
+
+    Label:
+        background_color: 1, 0, 0, 1
+        size_hint: (.275, .2)
+        pos_hint: {"x": -.035, "y": .635}
+        font_size: 40
+        text: "Volume:"
+        bold: True
+        color: 200/255, 0/255, 70/255, 1
+
+    Label:
+        background_color: 1, 0, 0, 1
+        size_hint: (.275, .2)
+        pos_hint: {"x": -.02, "y": .435}
+        text: "Speed:"
+        font_size: 40
+        bold: True
+        color: 200/255, 0/255, 70/255, 1
+
+    CheckBox:
+        canvas.before:
+            Color:
+                rgb: 200/255, 0, 70/255
+            Rectangle:
+                pos:self.center_x - 19, self.center_y - 19
+                size:[40, 40]
+            Color:
+                rgb: 1, .5, .6
+            Rectangle:
+                pos:self.center_x - 18, self.center_y - 18
+                size:[38, 38]
+
+        size_hint: (.05, .05)
+        pos_hint: {'center_x': .4, 'center_y': .38}
+        group: "L + radio"
+        on_press: root.L_plus_radio()
+
+    CheckBox:
+        canvas.before:
+            Color:
+                rgb: 200/255, 0, 70/255
+            Rectangle:
+                pos:self.center_x - 19, self.center_y - 19
+                size:[40, 40]
+            Color:
+                rgb: 1, .5, .6
+            Rectangle:
+                pos:self.center_x - 18, self.center_y - 18
+                size:[38, 38]
+
+        size_hint: (.05, .05)
+        pos_hint: {'center_x': .8, 'center_y': .38}
+        group: "L + radio"
+        on_press: root.L_plus_radio2()
+
+    Label:
+        background_color: 1, 0, 0, 1
+        size_hint: (.275, .2)
+        pos_hint: {"x": .1, "y": .285}
+        font_size: 40
+        text: "Voice 1:"
+        bold: True
+        color: 200/255, 0/255, 70/255, 1
+
+    Label:
+        background_color: 1, 0, 0, 1
+        size_hint: (.275, .2)
+        pos_hint: {"x": .5, "y": .285}
+        font_size: 40
+        text: "Voice 2:"
+        bold: True
+        color: 200/255, 0/255, 70/255, 1
+
+    Button:
+        size_hint: (.2025, .0765)
+        pos_hint: {"x":.7975, "y":.9235}
+        background_normal: ''
+        background_color: 200/255, 0, 70/255
+
+    Button:
+        size_hint: (.07, .075)
+        pos_hint: {"x":.93, "y":.925}
+        background_normal: ''
+        background_color: 1, .5, .6, .85
+        font_size: 50
+        bold: True
+        text: "?"
+        color: 200/255, 0/250, 70/255, 1
+        on_release: Factory.Question().open()
+
+    Button:
+        size_hint: (.13, .075)
+        pos_hint: {"x":.799, "y":.925}
+        background_normal: ''
+        background_color: 1, .5, .6, .85
+        font_size: 24
+        bold: True
+        text: "Credits"
+        color: 200/255, 0/250, 70/255, 1
+        on_release: Factory.Credits().open()
